@@ -1,0 +1,29 @@
+{
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/about/", "destination": "/about.html" },
+    { "source": "/mission", "destination": "/mission.html" },
+    { "source": "/mission/", "destination": "/mission.html" },
+    { "source": "/projects", "destination": "/projects.html" },
+    { "source": "/projects/", "destination": "/projects.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/gallery/", "destination": "/gallery.html" },
+    { "source": "/events", "destination": "/events.html" },
+    { "source": "/events/", "destination": "/events.html" },
+    { "source": "/join", "destination": "/join.html" },
+    { "source": "/join/", "destination": "/join.html" },
+    { "source": "/donate", "destination": "/donate.html" },
+    { "source": "/donate/", "destination": "/donate.html" },
+    { "source": "/news", "destination": "/news.html" },
+    { "source": "/news/", "destination": "/news.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}
